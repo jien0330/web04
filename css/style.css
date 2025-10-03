@@ -13,10 +13,11 @@ table{width: 98%;}
 .top{width: 100%;}
 header{width: 100%; height: 100px; margin: auto; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.2); position: relative; padding-top: 20px;}
 .inner{margin: auto; width: 1000px;}
-.fixed{position: fixed; top: 0; z-index: 11; left: 0;}
-header h1{position: absolute; float: left;width: 300px;height: 110px;}
+.fixed{position: fixed; top: 0; z-index: 11; left: 0; cursor: pointer;}
+header .nav{position: absolute; float: left;width: 300px;height: 110px; z-index: 1;}
 
-#bg{position: absolute; height: 235px; width: 100%; background: rgba(0,0,0,.5); top: 100px; z-index: 8;display: none;}
+
+#bg{position: absolute; height: 242px; width: 100%; background: rgba(0,0,0,.5); top: 100px; z-index: 8;display: none;}
 
 .navi{margin: auto; width: 1000px;height: 200px; float: left;position: relative;  }
 nav{position: absolute; right: -10px; top: 20px; z-index: 8; height: 110px; width: 700px;}
@@ -70,28 +71,29 @@ nav>ul>li.on>a{
 .contents2 .h25{margin-left: 20px;}
 .contents2 h2:hover{text-decoration: underline; font-weight: bold; opacity: 0.7;}
 
-.tabmenu li h2{border-radius: 20px 20px 0 0;}
-.tab{height: 300px; background: rgb(255, 255, 255); padding: 20px; position: relative; margin-top: 50px; }
+.tabmenu li h2{border-radius: 20px 20px 0 0; cursor: pointer;}
+.tab{height: 300px; background: #fff; padding: 20px; position: relative; margin-top: 50px; }
 .tab>ul{display: flex;}
-.tab>ul>li h2{width: 150px; text-align: center; padding: 10px 0; background: #000; color: #fff; }
+.tab>ul>li h2{width: 150px; text-align: center; padding: 10px 0; background: #777; color: #fff; font-size: 1.2rem;}
 .tab>ul>li h2 a{display: block; }
-.tab>ul>li.on h2{background: #777; }
-.tab .bar{position: absolute; width: 100%; height: 208px; background: #777; left: 0;}
+.tab>ul>li.on h2{background: #000; }
+.tab .bar{position: absolute; width: 100%; height: 208px; background: #77777700; border: 1px solid #000; left: 0;}
 
-.notice{color: #fff; }
+.notice{color: #000;}
 .notice table{padding-left: 20px;}
 .notice table tr{text-align: left;}
-.notice table th{padding: 18px; border-bottom: 2px dashed #fff; font-size: 20px; }
-.notice table td{text-align: right; border-bottom: 2px dashed #fff; font-size: 15px; }
+.notice table th{padding: 18px; border-bottom: 2px dashed #000; font-size: 20px; }
+.notice table td{text-align: right;  font-size: 15px; border-bottom: 2px dashed #000;}
+.notice table .none{border-bottom: none;}
 
 .gallery{display: none;}
 .gallery ul{display: flex; height: 100%; align-items: center; justify-content: center; gap: 10px;}
 .gallery ul li{text-align: center;  padding: 10px;}
-.gallery img{width: 380px; height: 140px; object-fit: cover; object-position: center; border: 2px solid #fff; border-radius: 10px;}
+.gallery img{width: 380px; height: 140px; object-fit: cover; object-position: center; border: 2px solid #000000; border-radius: 10px;}
 .gallery img:hover{opacity: 0.5;}
 .gallery .gimg{margin-bottom: 10px;}
-.gallery span{color: #fff; }
+.gallery span{color: #000000; }
 
-footer{height: 2500px; background: #4d4d4d; color: #ccc; margin-top: 350px;}
+.footer{height: 250px; background: #4d4d4d; color: #ccc; margin-top: 350px;}
 .foo{padding-top: 20px;}
-footer p{text-align: center; height: 35px; line-height: 35px; font-size: 12px;}
+.footer p{text-align: center; height: 35px; line-height: 35px; font-size: 12px;}
